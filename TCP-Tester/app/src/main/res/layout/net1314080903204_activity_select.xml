@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.hzuapps.andriodworks.homeworks.tcp_tester.SelectActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/net1314080903204_selectbg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/btn_toServer"
+        android:background="@drawable/net1314080903204_btnserver"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="195dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/btn_toClient"
+        android:background="@drawable/net1314080903204_btnclient"
+        android:layout_below="@+id/btn_toServer"
+        android:adjustViewBounds="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.hzuapps.andriodworks.homeworks.tcp_tester.ServerActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/net1314080903204_serverbg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/net1314080903204_white">
+        <TextView
+            android:id="@+id/text_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:text="端口："
+            android:textColor="@color/background_floating_material_dark" />
+
+        <EditText
+            android:id="@+id/edit_listenport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/text_port"
+            android:hint="请输入端口号..." />
+
+        <Button
+            android:id="@+id/btn_listen"
+            android:layout_toRightOf="@+id/edit_listenport"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:text="开始监听"
+            android:background="@color/accent_material_light"
+            android:textColor="@color/material_grey_50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/net1314080903204_white"
+        android:layout_below="@+id/LL1"
+        android:id="@+id/LL2">
+        <TextView
+            android:id="@+id/text_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送区："
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/background_floating_material_dark"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <EditText
+            android:id="@+id/edit_msgsend"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="请输入内容..."
+            android:gravity="top"
+            android:lines="1"
+            />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="发送"
+            android:background="@color/accent_material_light"
+            android:textColor="@color/material_grey_50"
+            android:gravity="center"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="125dp"
+            android:layout_below="@+id/edit_msgsend"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/net1314080903204_white"
+        android:layout_below="@+id/LL2">
+        <TextView
+            android:id="@+id/text_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收区："
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/background_floating_material_dark"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/edit_recv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="top"
+            android:singleLine="false"
+            android:maxLines="10"
+            android:layout_below="@+id/text_recv"
+            android:textColor="#0f0f0f" />
+    </LinearLayout>
+
+</RelativeLayout>

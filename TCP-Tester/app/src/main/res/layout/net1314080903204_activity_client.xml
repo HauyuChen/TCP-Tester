@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="edu.hzuapps.andriodworks.homeworks.tcp_tester.ClientActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/net1314080903204_clientbg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/net1314080903204_white"
+        android:id="@+id/GL1"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP地址:"
+                android:textColor="@color/background_floating_material_dark"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text_ip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_ip"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/background_floating_material_dark"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:text="端口号:"
+                android:id="@+id/text_port" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/edit"
+            android:layout_alignLeft="@+id/send"
+            android:layout_alignStart="@+id/send">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="请输入IP地址..."
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_ip" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="请输入端口号..."
+                android:id="@+id/edit_port"
+                android:layout_below="@+id/edit_ip"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="连接"
+            android:id="@+id/btn_connect"
+            android:background="@color/accent_material_light"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/net1314080903204_white"
+        android:id="@+id/LL3"
+        android:layout_below="@+id/GL1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_floating_material_dark"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:text="发送区："
+            android:layout_marginLeft="5dp"
+            android:id="@+id/text_send" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="请输入内容..."
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:id="@+id/edit_msgsend"
+            android:layout_below="@+id/text_send" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="发送"
+            android:id="@+id/btn_send"
+            android:background="@color/accent_material_light"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="125dp"
+            android:layout_below="@+id/edit_msgsend" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/net1314080903204_white"
+        android:layout_below="@+id/LL3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收区："
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/background_floating_material_dark"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:id="@+id/text_recv" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_recv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:layout_below="@+id/text_recv" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
