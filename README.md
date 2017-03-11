@@ -10,4 +10,4 @@
 - 开发语言：Java
 - 技术点：Socket网络编程
 
-![image](https://github.com/HauyuChen/Elevator-Simulation/blob/master/Welcome.png)
+![image](https://github.com/HauyuChen/TCP-Tester/blob/master/Welcome.png)
