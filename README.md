@@ -10,4 +10,4 @@
 - 开发语言：Java
 - 技术点：Socket网络编程
 
-![image](https://github.com/HauyuChen/TCP-Tester/blob/master/Welcome.png)
+<img src="https://github.com/HauyuChen/TCP-Tester/blob/master/Welcome.png" width = "50%" height = "50%" />
