@@ -8,6 +8,5 @@
 # 其他：
 - 开发环境：Android Studio
 - 开发语言：Java
-- 技术点：Socket网络编程
 
 <img src="https://github.com/HauyuChen/TCP-Tester/blob/master/Welcome.png" width = "50%" height = "50%" />
