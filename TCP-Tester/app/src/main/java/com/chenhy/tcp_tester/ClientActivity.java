@@ -1,4 +1,4 @@
-package edu.hzuapps.andriodworks.homeworks.net1314080903204.tcp_tester;
+package com.chenhy.tcp_tester;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -20,13 +20,13 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 /**
- * Create By ChenHauyu
- * Email：mrchenhy@gmail.com
+ * Create By HauyuChen
+ * Email：Hauyu.Chen@gmail.com
  */
 
 /* 客户端界面代码 */
-public class Net1314080903204_ClientActivity extends Activity {
-    private final String TAG="Net1314080903204_ClientActivity";
+public class ClientActivity extends Activity {
+    private final String TAG="ClientActivity";
     private EditText edit_ip;
     private EditText edit_port;
     private EditText edit_send;
@@ -111,12 +111,12 @@ public class Net1314080903204_ClientActivity extends Activity {
                             Log.i(TAG, "send to handler");
                         }
                     } catch (UnknownHostException e){
-                        Toast.makeText(Net1314080903204_ClientActivity.this,"无法建立连接：）",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientActivity.this,"无法建立连接：）",Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                         isConnected = false;
                     }
                     catch (IOException e) {
-                        Toast.makeText(Net1314080903204_ClientActivity.this,"无法建立连接：）",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ClientActivity.this,"无法建立连接：）",Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                         isConnected = false;
                     }
@@ -125,7 +125,7 @@ public class Net1314080903204_ClientActivity extends Activity {
             isConnected = true;
             /* 更新UI */
             btn_connect.setText("断开");
-            Toast.makeText(Net1314080903204_ClientActivity.this,"连接成功：）",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ClientActivity.this,"连接成功：）",Toast.LENGTH_SHORT).show();
         }else{
             isConnected = false;
             /* 更新UI */
@@ -134,7 +134,7 @@ public class Net1314080903204_ClientActivity extends Activity {
             edit_recv.setText("");
             /* 关闭socket */
             onDestroy();
-            Toast.makeText(Net1314080903204_ClientActivity.this,"连接已断开：）",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ClientActivity.this,"连接已断开：）",Toast.LENGTH_SHORT).show();
         }
     }
 

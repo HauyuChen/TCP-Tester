@@ -1,4 +1,4 @@
-package edu.hzuapps.andriodworks.homeworks.net1314080903204.tcp_tester;
+package com.chenhy.tcp_tester;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,12 +6,12 @@ import android.os.Handler;
 import android.os.Bundle;
 
 /**
- * Create By ChenHauyu
- * Email：mrchenhy@gmail.com
+ * Create By HauyuChen
+ * Email：Hauyu.Chen@gmail.com
  */
 
 /* 欢迎界面代码*/
-public class Net1314080903204_WelcomeActivity extends Activity {
+public class WelcomeActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +21,9 @@ public class Net1314080903204_WelcomeActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent toselect = new Intent(Net1314080903204_WelcomeActivity.this,Net1314080903204_SelectActivity.class);    //跳转至功能选择界面
+                Intent toselect = new Intent(WelcomeActivity.this,SelectActivity.class);    //跳转至功能选择界面
                 startActivity(toselect);
-                Net1314080903204_WelcomeActivity.this.finish();
+                WelcomeActivity.this.finish();
                 finish();
             }
         },3000);    //延时跳转：3秒

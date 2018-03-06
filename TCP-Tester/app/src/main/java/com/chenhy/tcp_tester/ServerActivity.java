@@ -1,4 +1,4 @@
-package edu.hzuapps.andriodworks.homeworks.net1314080903204.tcp_tester;
+package com.chenhy.tcp_tester;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -17,13 +17,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /**
- * Create By ChenHauyu
- * Email：mrchenhy@gmail.com
+ * Create By HauyuChen
+ * Email：Hauyu.Chen@gmail.com
  */
 
 /* 服务端界面代码 */
-public class Net1314080903204_ServerActivity extends Activity {
-    private final String TAG="Net1314080903204_ServerActivity";
+public class ServerActivity extends Activity {
+    private final String TAG="ServerActivity";
     private boolean isConnected = false;
     private ServerSocket serverSocket=null;
     private static Socket[] client = null;
@@ -150,7 +150,7 @@ public class Net1314080903204_ServerActivity extends Activity {
                 rec_str = new StringBuilder();
                 /* 监听端口 */
                 serverSocket = new ServerSocket(Integer.valueOf(edit_listenport.getText().toString()));
-                Toast.makeText(Net1314080903204_ServerActivity.this,"监听成功：）",Toast.LENGTH_SHORT).show();
+                Toast.makeText(ServerActivity.this,"监听成功：）",Toast.LENGTH_SHORT).show();
                 /* 开启线程，等待连接 */
                 new Thread(new SocketServerThread()).start();
                 /* 更新UI */
