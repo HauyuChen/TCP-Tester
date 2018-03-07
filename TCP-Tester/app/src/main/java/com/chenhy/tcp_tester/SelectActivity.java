@@ -15,7 +15,7 @@ public class SelectActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.net1314080903204_activity_select);
+        setContentView(R.layout.activity_select);
         /*“模拟服务端”按钮事件*/
         findViewById(R.id.btn_toServer).setOnClickListener(new View.OnClickListener(){
             @Override

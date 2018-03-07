@@ -44,7 +44,7 @@ public class ServerActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.net1314080903204_activity_server);
+        setContentView(R.layout.activity_server);
         /* 初始化 */
         initControls();
         /*发送按钮*/

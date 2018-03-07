@@ -42,7 +42,7 @@ public class ClientActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.net1314080903204_activity_client);
+        setContentView(R.layout.activity_client);
         /* 初始化 */
         edit_ip = (EditText) findViewById(R.id.edit_ip);
         edit_port = (EditText) findViewById(R.id.edit_port);
